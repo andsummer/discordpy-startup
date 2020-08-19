@@ -23,4 +23,16 @@ async def kokka(ctx):
     await ctx.send('ヤバイわ代　作詞:キャル 作曲:Cygames　ヤバイわ代は パチンコ代に家賃代に　シンフォギアでデュランダル折り 北斗無双で金保留外れ貧困層となりて　天龍で捲ろうと残資金をつぎ込みやけくそになって餃子の王将で散財するまで')
     
     
+ # 返信する非同期関数を定義
+async def reply(message):
+    reply = f'{message.author.mention} ぶっ殺すわよ！' # 返信メッセージの作成
+    await message.channel.send(reply) # 返信メッセージを送信
+
+# 発言時に実行されるイベントハンドラを定義
+@client.event
+async def on_message(message):
+    if client.user in message.mentions: # 話しかけられたかの判定
+        await reply(message) # 返信する非同期関数を実行
+        
+        
 bot.run(token)
