@@ -36,4 +36,5 @@ async def on_message(message):
         await reply(message) # 返信する非同期関数を実行
         
         
+        
 bot.run(token)
