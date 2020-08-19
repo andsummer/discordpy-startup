@@ -17,8 +17,10 @@ async def on_command_error(ctx, error):
 async def プリコネの年末年始は(ctx):
     await ctx.send('ヤバいわよ！')
 
+    
 @bot.command()
-async def ヤバいわ代(ctx):
+async def kokka(ctx):
     await ctx.send('ヤバイわ代　作詞:キャル 作曲:Cygames　ヤバイわ代は パチンコ代に家賃代に　シンフォギアでデュランダル折り 北斗無双で金保留外れ貧困層となりて　天龍で捲ろうと残資金をつぎ込みやけくそになって餃子の王将で散財するまで')
+    
     
 bot.run(token)
