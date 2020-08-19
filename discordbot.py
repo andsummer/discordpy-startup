@@ -14,7 +14,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def 10rengacha(ctx):
+async def puricone(ctx):
     await ctx.send('ヤバイわよ！')
 
 
