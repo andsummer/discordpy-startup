@@ -14,7 +14,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def puricone(ctx):
+async def プリコネの年末年始は(ctx):
     await ctx.send('ヤバイわよ！')
 
 
